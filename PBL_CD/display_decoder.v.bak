@@ -1,0 +1,72 @@
+//display_decoder 3 in 7 out
+
+module display_decoder (
+    input [2:0] func , not_func,
+    output [6:0] segment
+	 
+);
+
+    wire [6:0] T1 , T2;
+    wire T3;
+
+//~ac + ab G
+
+//~ac     
+    and and_term_G_1 (T1[0] , not_func[0] , func[2] );
+//ab
+    and and_term_G_2 (T2[0] , func[0]     , func[1] );
+    or or_terms_G (segment[6] , T1[0] , T2[0]);
+
+//~a~b~c + ab F
+
+//~a~b~c
+    and and_term_F_1 (T1[1] , not_func[0] , not_func[1] , not_func[2] ); 
+//ab
+    and and_term_F_2 (T2[1] , func[0]     , func[1] );
+    or or_terms_F (segment[5] , T1[1] , T2[1]);
+
+//~a~b~c + bc E
+
+//~a~b~c
+    and and_term_E_1 (T1[2] , not_func[0] , not_func[1] , not_func[2] );
+//bc
+    and and_term_E_2 (T2[2] , func[1]     , func[2] );
+    or or_terms_E (segment[4] , T1[2] , T2[2]);
+
+//~a~b + ~ac D
+
+//~a~b
+    and and_term_D_1 (T1[3] , not_func[0] , not_func[1] );
+//~ac
+    and and_term_D_2 (T2[3] , not_func[0] , func[2] );
+    or or_terms_D (segment[3] , T1[3] , T2[3]);
+
+//~a~b + ab + ~bc C
+
+//~a~b
+    and and_term_C_1 (T1[4] , not_func[0] , not_func[1] );
+//ab
+    and and_term_C_2 (T2[4] , func[0]     , func[1] );
+//~bc
+    and and_term_C_3 (T3[4] , not_func[1] , func[2] );
+    or or_terms_C (segment[2] , T1[4] , T2[4] , T3[4]);
+
+//~a~b + c + ab B
+
+//~a~b
+    and and_term_B_1 (T1[5] , not_func[0] , not_func[1] );
+//ab
+    and and_term_B_3 (T2[5] , func[0]     , func[1] );
+    or or_terms_B (segment[1] , T1[5] , T2[5] , func[2]);
+
+//~a~b + bc A
+
+//~a~b
+    and and_term_A_1 (T1[6] , not_func[0] , not_func[1] ); 
+//bc
+    and and_term_A_2 (T2[6] , func[1]     , func[2] );         
+    or or_terms_A (segment[0] , T1[6] , T2[6]);
+
+endmodule
+
+

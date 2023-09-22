@@ -1,0 +1,692 @@
+-- Copyright (C) 2023  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+--final_matriz[0] is final_matriz[0] at PIN_85
+--operation mode is output
+
+final_matriz[0] = OUTPUT(!and_final_matriz[0]);
+
+
+--final_matriz[1] is final_matriz[1] at PIN_83
+--operation mode is output
+
+final_matriz[1] = OUTPUT(!and_final_matriz[1]);
+
+
+--final_matriz[2] is final_matriz[2] at PIN_84
+--operation mode is output
+
+final_matriz[2] = OUTPUT(!and_final_matriz[2]);
+
+
+--final_matriz[3] is final_matriz[3] at PIN_87
+--operation mode is output
+
+final_matriz[3] = OUTPUT(!and_final_matriz[3]);
+
+
+--final_matriz[4] is final_matriz[4] at PIN_81
+--operation mode is output
+
+final_matriz[4] = OUTPUT(!and_final_matriz[4]);
+
+
+--final_matriz[5] is final_matriz[5] at PIN_91
+--operation mode is output
+
+final_matriz[5] = OUTPUT(!and_final_matriz[5]);
+
+
+--final_matriz[6] is final_matriz[6] at PIN_89
+--operation mode is output
+
+final_matriz[6] = OUTPUT(!and_final_matriz[6]);
+
+
+--display[0] is display[0] at PIN_90
+--operation mode is output
+
+display[0] = OUTPUT(!C1L1);
+
+
+--display[1] is display[1] at PIN_70
+--operation mode is output
+
+display[1] = OUTPUT(C1L2);
+
+
+--display[2] is display[2] at PIN_41
+--operation mode is output
+
+display[2] = OUTPUT(C1L3);
+
+
+--display[3] is display[3] at PIN_98
+--operation mode is output
+
+display[3] = OUTPUT(!C1L1);
+
+
+--display[4] is display[4] at PIN_100
+--operation mode is output
+
+display[4] = OUTPUT(C1_or_terms_4);
+
+
+--display[5] is display[5] at PIN_92
+--operation mode is output
+
+display[5] = OUTPUT(C1_or_terms_5);
+
+
+--display[6] is display[6] at PIN_39
+--operation mode is output
+
+display[6] = OUTPUT(C1L6);
+
+
+--final_leds[0] is final_leds[0] at PIN_54
+--operation mode is output
+
+final_leds[0] = OUTPUT(or_final_leds[0]);
+
+
+--final_leds[1] is final_leds[1] at PIN_57
+--operation mode is output
+
+final_leds[1] = OUTPUT(or_final_leds[1]);
+
+
+--final_leds[2] is final_leds[2] at PIN_61
+--operation mode is output
+
+final_leds[2] = OUTPUT(or_final_leds[2]);
+
+
+--final_leds[3] is final_leds[3] at PIN_69
+--operation mode is output
+
+final_leds[3] = OUTPUT(or_final_leds[3]);
+
+
+--display_on is display_on at PIN_37
+--operation mode is output
+
+display_on = OUTPUT(D1L1);
+
+
+--auto_ie1 is auto_ie1 at PIN_86
+--operation mode is output
+
+auto_ie1 = OUTPUT(!M1L4);
+
+
+--auto_ie2 is auto_ie2 at PIN_74
+--operation mode is output
+
+auto_ie2 = OUTPUT(!M2L4);
+
+
+--high_out[0] is high_out[0] at PIN_97
+--operation mode is output
+
+high_out[0] = OUTPUT(VCC);
+
+
+--high_out[1] is high_out[1] at PIN_88
+--operation mode is output
+
+high_out[1] = OUTPUT(VCC);
+
+
+--high_out[2] is high_out[2] at PIN_66
+--operation mode is output
+
+high_out[2] = OUTPUT(VCC);
+
+
+--high_out[3] is high_out[3] at PIN_68
+--operation mode is output
+
+high_out[3] = OUTPUT(VCC);
+
+
+--high_out[4] is high_out[4] at PIN_96
+--operation mode is output
+
+high_out[4] = OUTPUT(VCC);
+
+
+--ie1_func[0] is ie1_func[0] at PIN_48
+--operation mode is input
+
+ie1_func[0] = INPUT();
+
+
+--ie1_user[0] is ie1_user[0] at PIN_30
+--operation mode is input
+
+ie1_user[0] = INPUT();
+
+
+--ie1_user[1] is ie1_user[1] at PIN_33
+--operation mode is input
+
+ie1_user[1] = INPUT();
+
+
+--ie1_func[2] is ie1_func[2] at PIN_40
+--operation mode is input
+
+ie1_func[2] = INPUT();
+
+
+--ie1_func[1] is ie1_func[1] at PIN_44
+--operation mode is input
+
+ie1_func[1] = INPUT();
+
+
+--M1L1 is valid_user_func:valid_user_func_ie1|or_terms~0 at LC_X7_Y2_N8
+--operation mode is normal
+
+M1L1 = (ie1_user[1] & ((ie1_func[2] & (!ie1_func[1] & !ie1_func[0])) # (!ie1_func[2] & (ie1_func[1])))) # (!ie1_user[1] & (ie1_func[2] $ (((ie1_func[0])))));
+
+
+--M1L2 is valid_user_func:valid_user_func_ie1|or_terms~1 at LC_X7_Y2_N0
+--operation mode is normal
+
+M1L2 = (ie1_func[0] & ((ie1_user[1] & (!ie1_func[2] & !ie1_func[1])) # (!ie1_user[1] & (ie1_func[2])))) # (!ie1_func[0] & (ie1_func[1] & (ie1_user[1] $ (!ie1_func[2]))));
+
+
+--ie1_user[2] is ie1_user[2] at PIN_35
+--operation mode is input
+
+ie1_user[2] = INPUT();
+
+
+--M1L3 is valid_user_func:valid_user_func_ie1|or_terms~2 at LC_X7_Y2_N9
+--operation mode is normal
+
+M1L3 = (ie1_user[0] & ((ie1_user[2] & ((!ie1_user[1]))) # (!ie1_user[2] & ((ie1_user[1]) # (!M1L2))))) # (!ie1_user[0] & (ie1_user[2] & (M1L2 & ie1_user[1])));
+
+
+--M1L4 is valid_user_func:valid_user_func_ie1|or_terms~3 at LC_X7_Y2_N7
+--operation mode is normal
+
+M1L4 = ((M1L3 & (M1L2 $ (M1L1))));
+
+
+--ie2_user[1] is ie2_user[1] at PIN_36
+--operation mode is input
+
+ie2_user[1] = INPUT();
+
+
+--ie2_func[2] is ie2_func[2] at PIN_42
+--operation mode is input
+
+ie2_func[2] = INPUT();
+
+
+--ie2_func[1] is ie2_func[1] at PIN_50
+--operation mode is input
+
+ie2_func[1] = INPUT();
+
+
+--ie2_func[0] is ie2_func[0] at PIN_52
+--operation mode is input
+
+ie2_func[0] = INPUT();
+
+
+--M2L1 is valid_user_func:valid_user_func_ie2|or_terms~0 at LC_X7_Y1_N6
+--operation mode is normal
+
+M2L1 = (ie2_func[2] & (!ie2_func[0] & ((!ie2_user[1]) # (!ie2_func[1])))) # (!ie2_func[2] & ((ie2_user[1] & (ie2_func[1])) # (!ie2_user[1] & ((ie2_func[0])))));
+
+
+--M2L2 is valid_user_func:valid_user_func_ie2|or_terms~1 at LC_X7_Y1_N7
+--operation mode is normal
+
+M2L2 = (ie2_func[0] & ((ie2_func[2] & ((!ie2_user[1]))) # (!ie2_func[2] & (!ie2_func[1] & ie2_user[1])))) # (!ie2_func[0] & (ie2_func[1] & (ie2_func[2] $ (!ie2_user[1]))));
+
+
+--ie2_user[2] is ie2_user[2] at PIN_34
+--operation mode is input
+
+ie2_user[2] = INPUT();
+
+
+--ie2_user[0] is ie2_user[0] at PIN_38
+--operation mode is input
+
+ie2_user[0] = INPUT();
+
+
+--M2L3 is valid_user_func:valid_user_func_ie2|or_terms~2 at LC_X7_Y1_N8
+--operation mode is normal
+
+M2L3 = (ie2_user[1] & ((ie2_user[0] & ((!ie2_user[2]))) # (!ie2_user[0] & (M2L2 & ie2_user[2])))) # (!ie2_user[1] & (ie2_user[0] & ((ie2_user[2]) # (!M2L2))));
+
+
+--M2L4 is valid_user_func:valid_user_func_ie2|or_terms~3 at LC_X7_Y1_N9
+--operation mode is normal
+
+M2L4 = ((M2L3 & (M2L1 $ (M2L2))));
+
+
+--L1_and_term_1 is same_code:same_user_1|and_term_1 at LC_X5_Y4_N8
+--operation mode is normal
+
+L1_and_term_1 = (!B1_and_buf[2] & (!B3_and_buf[2] & (!B3_and_buf[1] & !B1_and_buf[1])));
+
+
+--J1L1 is priority:priority_1|or_terms~0 at LC_X7_Y4_N1
+--operation mode is normal
+
+J1L1 = (ie2_user[2] & (((!E1L1) # (!ie2_user[1])))) # (!ie2_user[2] & (ie2_user[0] & ((ie2_user[1]) # (!E1L1))));
+
+
+--J1L2 is priority:priority_1|or_terms~1 at LC_X7_Y4_N8
+--operation mode is normal
+
+J1L2 = (((!ie1_user[1] & B1_and_buf[2])) # (!J1L1)) # (!M2L4);
+
+
+--L2L1 is same_code:same_func_1|or_terms~0 at LC_X5_Y3_N5
+--operation mode is normal
+
+L2L1 = (ie1_func[2] & (M1L4 $ (((M2L4 & ie2_func[2]))))) # (!ie1_func[2] & (M2L4 & (ie2_func[2])));
+
+
+--L2L2 is same_code:same_func_1|or_terms~1 at LC_X5_Y3_N7
+--operation mode is normal
+
+L2L2 = (B2_and_buf[2] & (!ie2_func[1] & (ie2_func[2] & !B2L3)));
+
+
+--L1L3 is same_code:same_user_1|and_term_5~0 at LC_X5_Y2_N4
+--operation mode is normal
+
+L1L3 = (ie2_user[2] & (ie1_user[2] & (!B3_and_buf[1] & !B1_and_buf[1])));
+
+
+--A1L9 is and_use_priority~0 at LC_X5_Y2_N2
+--operation mode is normal
+
+A1L9 = ((!L1L3 & ((ie1_user[0]) # (ie2_user[0]))));
+
+
+--L1L2 is same_code:same_user_1|and_term_3~0 at LC_X7_Y4_N3
+--operation mode is normal
+
+L1L2 = (!B3_and_buf[2] & (ie1_user[1] & (!B1_and_buf[2] & ie2_user[1])));
+
+
+--A1L10 is and_use_priority~1 at LC_X7_Y4_N6
+--operation mode is normal
+
+A1L10 = (A1L9 & (M2L4 & (M1L4 & !L1L2)));
+
+
+--K1_or_1 is priority_iex:priority_iex_1|or_1 at LC_X7_Y4_N0
+--operation mode is normal
+
+K1_or_1 = ((L1_and_term_1) # ((J1L2) # (!A1L10))) # (!L2L4);
+
+
+--B7L1 is bufferif_3bit:bufif_ie1_func_is1|and_buf[0]~0 at LC_X7_Y4_N9
+--operation mode is normal
+
+B7L1 = (K1_or_1 & (E1L1 & (ie1_user[2] $ (ie1_user[1]))));
+
+
+--G1L1 is matriz_iex:matriz_ie1|or_line_6~0 at LC_X6_Y3_N4
+--operation mode is normal
+
+G1L1 = (ie1_func[0] & (!ie1_func[1] & (!ie1_func[2] & B7L1)));
+
+
+--E2L1 is iex_is1:ie2_is1|or_terms~0 at LC_X7_Y1_N2
+--operation mode is normal
+
+E2L1 = (ie2_user[0] & (M2L4 & (ie2_user[1] $ (ie2_user[2]))));
+
+
+--K1_nand_1 is priority_iex:priority_iex_1|nand_1 at LC_X7_Y4_N7
+--operation mode is normal
+
+K1_nand_1 = (J1L2 & (!L1_and_term_1 & (L2L4 & A1L10)));
+
+
+--B9L1 is bufferif_3bit:bufif_ie2_func_is1|and_buf[0]~0 at LC_X2_Y2_N6
+--operation mode is normal
+
+B9L1 = ((!K1_nand_1 & (E2L1 & ie2_func[0])));
+
+
+--B9L3 is bufferif_3bit:bufif_ie2_func_is1|and_buf[2]~1 at LC_X2_Y2_N5
+--operation mode is normal
+
+B9L3 = ((ie2_func[2] & (E2L1 & !K1_nand_1)));
+
+
+--B9L2 is bufferif_3bit:bufif_ie2_func_is1|and_buf[1]~2 at LC_X2_Y2_N7
+--operation mode is normal
+
+B9L2 = (ie2_func[1] & (((E2L1 & !K1_nand_1))));
+
+
+--and_final_matriz[0] is and_final_matriz[0] at LC_X2_Y2_N4
+--operation mode is normal
+
+and_final_matriz[0] = (G1L1) # ((!B9L3 & (!B9L2 & B9L1)));
+
+
+--G1L2 is matriz_iex:matriz_ie1|or_line_6~1 at LC_X6_Y3_N7
+--operation mode is normal
+
+G1L2 = (!ie1_func[0] & (ie1_func[1] & (!ie1_func[2] & B7L1)));
+
+
+--and_final_matriz[1] is and_final_matriz[1] at LC_X2_Y2_N9
+--operation mode is normal
+
+and_final_matriz[1] = (G1L2) # ((!B9L3 & (B9L2 & !B9L1)));
+
+
+--G1L3 is matriz_iex:matriz_ie1|or_line_6~2 at LC_X6_Y3_N3
+--operation mode is normal
+
+G1L3 = (ie1_func[0] & (ie1_func[1] & (!ie1_func[2] & B7L1)));
+
+
+--and_final_matriz[2] is and_final_matriz[2] at LC_X2_Y2_N3
+--operation mode is normal
+
+and_final_matriz[2] = (G1L3) # ((!B9L3 & (B9L2 & B9L1)));
+
+
+--G1L4 is matriz_iex:matriz_ie1|or_line_6~3 at LC_X6_Y3_N9
+--operation mode is normal
+
+G1L4 = (!ie1_func[0] & (!ie1_func[1] & (ie1_func[2] & B7L1)));
+
+
+--and_final_matriz[3] is and_final_matriz[3] at LC_X2_Y2_N0
+--operation mode is normal
+
+and_final_matriz[3] = (G1L4) # ((B9L3 & (!B9L2 & !B9L1)));
+
+
+--G1L5 is matriz_iex:matriz_ie1|or_line_6~4 at LC_X6_Y3_N6
+--operation mode is normal
+
+G1L5 = (ie1_func[0] & (!ie1_func[1] & (ie1_func[2] & B7L1)));
+
+
+--and_final_matriz[4] is and_final_matriz[4] at LC_X2_Y2_N2
+--operation mode is normal
+
+and_final_matriz[4] = (G1L5) # ((B9L3 & (!B9L2 & B9L1)));
+
+
+--G1L6 is matriz_iex:matriz_ie1|or_line_6~5 at LC_X6_Y3_N2
+--operation mode is normal
+
+G1L6 = (!ie1_func[0] & (ie1_func[1] & (ie1_func[2] & B7L1)));
+
+
+--and_final_matriz[5] is and_final_matriz[5] at LC_X2_Y2_N1
+--operation mode is normal
+
+and_final_matriz[5] = (G1L6) # ((B9L3 & (B9L2 & !B9L1)));
+
+
+--G1L7 is matriz_iex:matriz_ie1|or_line_6~6 at LC_X6_Y3_N8
+--operation mode is normal
+
+G1L7 = (ie1_func[0] & (ie1_func[1] & (ie1_func[2] & B7L1)));
+
+
+--and_final_matriz[6] is and_final_matriz[6] at LC_X2_Y2_N8
+--operation mode is normal
+
+and_final_matriz[6] = (G1L7) # ((B9L3 & (B9L2 & B9L1)));
+
+
+--D1_or_func2_ie2 is func2:func2_1|or_func2_ie2 at LC_X7_Y3_N6
+--operation mode is normal
+
+D1_or_func2_ie2 = ((ie2_func[2]) # ((ie2_func[0]) # (!M2L4))) # (!ie2_func[1]);
+
+
+--D1L3 is func2:func2_1|or_1~0 at LC_X6_Y3_N5
+--operation mode is normal
+
+D1L3 = (!ie1_func[0] & (!ie1_func[2] & (M1L4 & ie1_func[1])));
+
+
+--D1_or_1 is func2:func2_1|or_1 at LC_X7_Y4_N5
+--operation mode is normal
+
+D1_or_1 = (((!D1_or_func2_ie2 & !J1L2)) # (!D1L3));
+
+
+--H1L1 is mux2_1:mux2_1_display|or_out[0]~0 at LC_X7_Y4_N2
+--operation mode is normal
+
+H1L1 = (D1_or_1 & (((E1L1)))) # (!D1_or_1 & (ie2_user[0] & ((M2L4))));
+
+
+--H1L2 is mux2_1:mux2_1_display|or_out[1]~1 at LC_X5_Y4_N9
+--operation mode is normal
+
+H1L2 = ((D1_or_1 & (B1_and_buf[1])) # (!D1_or_1 & ((B3_and_buf[1]))));
+
+
+--H1L3 is mux2_1:mux2_1_display|or_out[2]~2 at LC_X5_Y4_N7
+--operation mode is normal
+
+H1L3 = ((D1_or_1 & (B1_and_buf[2])) # (!D1_or_1 & ((B3_and_buf[2]))));
+
+
+--C1L1 is display:display_1|or_terms_0~0 at LC_X5_Y4_N1
+--operation mode is normal
+
+C1L1 = ((!H1L3 & ((H1L1) # (!H1L2))));
+
+
+--C1L2 is display:display_1|or_terms_1~0 at LC_X5_Y4_N6
+--operation mode is normal
+
+C1L2 = ((H1L2 & (H1L3 $ (!H1L1))) # (!H1L2 & (H1L3 & !H1L1)));
+
+
+--C1L3 is display:display_1|or_terms_2~0 at LC_X5_Y4_N5
+--operation mode is normal
+
+C1L3 = (H1L2 $ (((H1L3 & !H1L1))));
+
+
+--C1_or_terms_4 is display:display_1|or_terms_4 at LC_X5_Y4_N4
+--operation mode is normal
+
+C1_or_terms_4 = ((H1L3) # (H1L2 $ (H1L1)));
+
+
+--C1_or_terms_5 is display:display_1|or_terms_5 at LC_X5_Y4_N2
+--operation mode is normal
+
+C1_or_terms_5 = ((H1L1) # (H1L2 $ (H1L3)));
+
+
+--C1L6 is display:display_1|or_terms_6~0 at LC_X5_Y4_N3
+--operation mode is normal
+
+C1L6 = ((H1L3 & ((H1L1) # (!H1L2))) # (!H1L3 & ((!H1L1))));
+
+
+--B8L1 is bufferif_3bit:bufif_ie1_func_is2|and_buf[0]~0 at LC_X7_Y4_N4
+--operation mode is normal
+
+B8L1 = (K1_or_1 & ((ie1_user[2] $ (!ie1_user[1])) # (!E1L1)));
+
+
+--F1_and_led_0 is leds_iex:leds_ie1|and_led_0 at LC_X5_Y3_N4
+--operation mode is normal
+
+F1_and_led_0 = (B8L1 & (B2_and_buf[0] & (!B2_and_buf[2] & !B2L3)));
+
+
+--B10_and_buf[0] is bufferif_3bit:bufif_ie2_func_is2|and_buf[0] at LC_X7_Y3_N0
+--operation mode is normal
+
+B10_and_buf[0] = (!E2L1 & (((B4_and_buf[0] & !K1_nand_1))));
+
+
+--F2L1 is leds_iex:leds_ie2|and_led_1~0 at LC_X7_Y3_N8
+--operation mode is normal
+
+F2L1 = (B4L3 & (((!E2L1 & !K1_nand_1))));
+
+
+--B10_and_buf[2] is bufferif_3bit:bufif_ie2_func_is2|and_buf[2] at LC_X7_Y3_N9
+--operation mode is normal
+
+B10_and_buf[2] = (!E2L1 & (M2L4 & (ie2_func[2] & !K1_nand_1)));
+
+
+--or_final_leds[0] is or_final_leds[0] at LC_X7_Y3_N1
+--operation mode is normal
+
+or_final_leds[0] = (F1_and_led_0) # ((!F2L1 & (!B10_and_buf[2] & B10_and_buf[0])));
+
+
+--F1L2 is leds_iex:leds_ie1|and_led_1~0 at LC_X7_Y3_N4
+--operation mode is normal
+
+F1L2 = (!B2_and_buf[2] & (B2L3 & (ie1_func[0] & B8L1)));
+
+
+--or_final_leds[1] is or_final_leds[1] at LC_X7_Y3_N5
+--operation mode is normal
+
+or_final_leds[1] = (F1L2) # ((F2L1 & (!B10_and_buf[2] & ie2_func[0])));
+
+
+--F1_and_led_2 is leds_iex:leds_ie1|and_led_2 at LC_X5_Y3_N6
+--operation mode is normal
+
+F1_and_led_2 = (B8L1 & (!B2_and_buf[0] & (B2_and_buf[2] & !B2L3)));
+
+
+--or_final_leds[2] is or_final_leds[2] at LC_X7_Y3_N7
+--operation mode is normal
+
+or_final_leds[2] = (F1_and_led_2) # ((!F2L1 & (B10_and_buf[2] & !B10_and_buf[0])));
+
+
+--F1L4 is leds_iex:leds_ie1|and_led_3~0 at LC_X5_Y3_N8
+--operation mode is normal
+
+F1L4 = (ie1_func[2] & (!B2_and_buf[0] & (B8L1 & B2L3)));
+
+
+--or_final_leds[3] is or_final_leds[3] at LC_X7_Y3_N2
+--operation mode is normal
+
+or_final_leds[3] = (F1L4) # ((ie2_func[2] & (!B10_and_buf[0] & F2L1)));
+
+
+--D1L1 is func2:func2_1|and_display_on~0 at LC_X7_Y3_N3
+--operation mode is normal
+
+D1L1 = (!D1L3 & (((D1_or_func2_ie2))));
+
+
+--E1L1 is iex_is1:ie1_is1|or_terms~2 at LC_X7_Y2_N5
+--operation mode is normal
+
+E1L1 = (ie1_user[0] & (M1L3 & (M1L2 $ (M1L1))));
+
+
+--B1_and_buf[1] is bufferif_3bit:bufif_ie1_user|and_buf[1] at LC_X7_Y2_N2
+--operation mode is normal
+
+B1_and_buf[1] = (ie1_user[1] & (M1L3 & (M1L2 $ (M1L1))));
+
+
+--B3_and_buf[1] is bufferif_3bit:bufif_ie2_user|and_buf[1] at LC_X7_Y1_N5
+--operation mode is normal
+
+B3_and_buf[1] = (ie2_user[1] & (M2L3 & (M2L1 $ (M2L2))));
+
+
+--B1_and_buf[2] is bufferif_3bit:bufif_ie1_user|and_buf[2] at LC_X7_Y2_N1
+--operation mode is normal
+
+B1_and_buf[2] = (M1L3 & (ie1_user[2] & (M1L1 $ (M1L2))));
+
+
+--B3_and_buf[2] is bufferif_3bit:bufif_ie2_user|and_buf[2] at LC_X7_Y1_N4
+--operation mode is normal
+
+B3_and_buf[2] = (ie2_user[2] & (M2L3 & (M2L1 $ (M2L2))));
+
+
+--B2L3 is bufferif_3bit:bufif_ie1_func|and_buf[1]~6 at LC_X7_Y2_N3
+--operation mode is normal
+
+B2L3 = (ie1_func[1] & (M1L3 & (M1L1 $ (M1L2))));
+
+
+--B4L3 is bufferif_3bit:bufif_ie2_func|and_buf[1]~4 at LC_X7_Y1_N3
+--operation mode is normal
+
+B4L3 = (ie2_func[1] & (M2L3 & (M2L1 $ (M2L2))));
+
+
+--B2_and_buf[0] is bufferif_3bit:bufif_ie1_func|and_buf[0] at LC_X7_Y2_N4
+--operation mode is normal
+
+B2_and_buf[0] = (M1L3 & (ie1_func[0] & (M1L1 $ (M1L2))));
+
+
+--B4_and_buf[0] is bufferif_3bit:bufif_ie2_func|and_buf[0] at LC_X7_Y1_N1
+--operation mode is normal
+
+B4_and_buf[0] = (ie2_func[0] & (M2L3 & (M2L1 $ (M2L2))));
+
+
+--B2_and_buf[2] is bufferif_3bit:bufif_ie1_func|and_buf[2] at LC_X7_Y2_N6
+--operation mode is normal
+
+B2_and_buf[2] = (ie1_func[2] & (M1L3 & (M1L2 $ (M1L1))));
+
+
+--L2L3 is same_code:same_func_1|or_terms~2 at LC_X5_Y3_N9
+--operation mode is normal
+
+L2L3 = (!L2L1 & ((B4L3 & ((B2L3))) # (!B4L3 & (B4_and_buf[0] & !B2L3))));
+
+
+--L2L4 is same_code:same_func_1|or_terms~3 at LC_X5_Y3_N0
+--operation mode is normal
+
+L2L4 = (B4_and_buf[0] & (L2L3 & ((B2_and_buf[0])))) # (!B4_and_buf[0] & (!B2_and_buf[0] & ((L2L3) # (L2L2))));
+
+

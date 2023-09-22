@@ -1,0 +1,556 @@
+|painel_controle
+ie1_user[0] => ie1_user[0].IN2
+ie1_user[1] => ie1_user[1].IN2
+ie1_user[2] => ie1_user[2].IN2
+ie2_user[0] => ie2_user[0].IN2
+ie2_user[1] => ie2_user[1].IN2
+ie2_user[2] => ie2_user[2].IN2
+ie1_func[0] => ie1_func[0].IN2
+ie1_func[1] => ie1_func[1].IN2
+ie1_func[2] => ie1_func[2].IN2
+ie2_func[0] => ie2_func[0].IN2
+ie2_func[1] => ie2_func[1].IN2
+ie2_func[2] => ie2_func[2].IN2
+final_matriz[0] <= and_final_matriz[0].DB_MAX_OUTPUT_PORT_TYPE
+final_matriz[1] <= and_final_matriz[1].DB_MAX_OUTPUT_PORT_TYPE
+final_matriz[2] <= and_final_matriz[2].DB_MAX_OUTPUT_PORT_TYPE
+final_matriz[3] <= and_final_matriz[3].DB_MAX_OUTPUT_PORT_TYPE
+final_matriz[4] <= and_final_matriz[4].DB_MAX_OUTPUT_PORT_TYPE
+final_matriz[5] <= and_final_matriz[5].DB_MAX_OUTPUT_PORT_TYPE
+final_matriz[6] <= and_final_matriz[6].DB_MAX_OUTPUT_PORT_TYPE
+display[0] <= display:display_1.output_segments
+display[1] <= display:display_1.output_segments
+display[2] <= display:display_1.output_segments
+display[3] <= display:display_1.output_segments
+display[4] <= display:display_1.output_segments
+display[5] <= display:display_1.output_segments
+display[6] <= display:display_1.output_segments
+final_leds[0] <= or_final_leds[0].DB_MAX_OUTPUT_PORT_TYPE
+final_leds[1] <= or_final_leds[1].DB_MAX_OUTPUT_PORT_TYPE
+final_leds[2] <= or_final_leds[2].DB_MAX_OUTPUT_PORT_TYPE
+final_leds[3] <= or_final_leds[3].DB_MAX_OUTPUT_PORT_TYPE
+display_on <= func2:func2_1.display_on
+auto_ie1 <= valid_user_func_ie1_w.DB_MAX_OUTPUT_PORT_TYPE
+auto_ie2 <= valid_user_func_ie2_w.DB_MAX_OUTPUT_PORT_TYPE
+high_out[0] <= <VCC>
+high_out[1] <= <VCC>
+high_out[2] <= <VCC>
+high_out[3] <= <VCC>
+high_out[4] <= <VCC>
+
+
+|painel_controle|valid_user_func:valid_user_func_ie1
+user[0] => and_term_1.IN0
+user[0] => and_term_2.IN0
+user[0] => and_term_3.IN0
+user[0] => and_term_6.IN0
+user[0] => and_term_7.IN0
+user[0] => and_term_8.IN0
+user[0] => and_term_4.IN0
+user[0] => and_term_5.IN0
+user[1] => and_term_4.IN1
+user[1] => and_term_5.IN1
+user[1] => and_term_6.IN1
+user[1] => and_term_3.IN1
+user[1] => and_term_7.IN1
+user[1] => and_term_8.IN1
+user[2] => and_term_3.IN2
+user[2] => and_term_4.IN2
+user[2] => and_term_5.IN2
+user[2] => and_term_8.IN2
+user[2] => and_term_1.IN1
+user[2] => and_term_2.IN1
+user[2] => and_term_6.IN2
+func[0] => and_term_1.IN2
+func[0] => and_term_4.IN3
+func[0] => and_term_7.IN2
+func[0] => and_term_2.IN2
+func[0] => and_term_5.IN3
+func[1] => and_term_3.IN3
+func[1] => and_term_5.IN4
+func[1] => and_term_6.IN3
+func[1] => and_term_4.IN4
+func[2] => and_term_2.IN3
+func[2] => and_term_5.IN5
+func[2] => and_term_8.IN3
+func[2] => and_term_1.IN3
+func[2] => and_term_4.IN5
+func[2] => and_term_6.IN4
+func[2] => and_term_7.IN3
+output_bit <= or_terms.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|valid_user_func:valid_user_func_ie2
+user[0] => and_term_1.IN0
+user[0] => and_term_2.IN0
+user[0] => and_term_3.IN0
+user[0] => and_term_6.IN0
+user[0] => and_term_7.IN0
+user[0] => and_term_8.IN0
+user[0] => and_term_4.IN0
+user[0] => and_term_5.IN0
+user[1] => and_term_4.IN1
+user[1] => and_term_5.IN1
+user[1] => and_term_6.IN1
+user[1] => and_term_3.IN1
+user[1] => and_term_7.IN1
+user[1] => and_term_8.IN1
+user[2] => and_term_3.IN2
+user[2] => and_term_4.IN2
+user[2] => and_term_5.IN2
+user[2] => and_term_8.IN2
+user[2] => and_term_1.IN1
+user[2] => and_term_2.IN1
+user[2] => and_term_6.IN2
+func[0] => and_term_1.IN2
+func[0] => and_term_4.IN3
+func[0] => and_term_7.IN2
+func[0] => and_term_2.IN2
+func[0] => and_term_5.IN3
+func[1] => and_term_3.IN3
+func[1] => and_term_5.IN4
+func[1] => and_term_6.IN3
+func[1] => and_term_4.IN4
+func[2] => and_term_2.IN3
+func[2] => and_term_5.IN5
+func[2] => and_term_8.IN3
+func[2] => and_term_1.IN3
+func[2] => and_term_4.IN5
+func[2] => and_term_6.IN4
+func[2] => and_term_7.IN3
+output_bit <= or_terms.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|bufferif_3bit:bufif_ie1_user
+bufin[0] => and_buf[0].IN0
+bufin[1] => and_buf[1].IN0
+bufin[2] => and_buf[2].IN0
+control => and_buf[0].IN1
+control => and_buf[1].IN1
+control => and_buf[2].IN1
+bufout[0] <= and_buf[0].DB_MAX_OUTPUT_PORT_TYPE
+bufout[1] <= and_buf[1].DB_MAX_OUTPUT_PORT_TYPE
+bufout[2] <= and_buf[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|bufferif_3bit:bufif_ie1_func
+bufin[0] => and_buf[0].IN0
+bufin[1] => and_buf[1].IN0
+bufin[2] => and_buf[2].IN0
+control => and_buf[0].IN1
+control => and_buf[1].IN1
+control => and_buf[2].IN1
+bufout[0] <= and_buf[0].DB_MAX_OUTPUT_PORT_TYPE
+bufout[1] <= and_buf[1].DB_MAX_OUTPUT_PORT_TYPE
+bufout[2] <= and_buf[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|bufferif_3bit:bufif_ie2_user
+bufin[0] => and_buf[0].IN0
+bufin[1] => and_buf[1].IN0
+bufin[2] => and_buf[2].IN0
+control => and_buf[0].IN1
+control => and_buf[1].IN1
+control => and_buf[2].IN1
+bufout[0] <= and_buf[0].DB_MAX_OUTPUT_PORT_TYPE
+bufout[1] <= and_buf[1].DB_MAX_OUTPUT_PORT_TYPE
+bufout[2] <= and_buf[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|bufferif_3bit:bufif_ie2_func
+bufin[0] => and_buf[0].IN0
+bufin[1] => and_buf[1].IN0
+bufin[2] => and_buf[2].IN0
+control => and_buf[0].IN1
+control => and_buf[1].IN1
+control => and_buf[2].IN1
+bufout[0] <= and_buf[0].DB_MAX_OUTPUT_PORT_TYPE
+bufout[1] <= and_buf[1].DB_MAX_OUTPUT_PORT_TYPE
+bufout[2] <= and_buf[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|same_code:same_user_1
+code_1[0] => and_term_1.IN0
+code_1[0] => and_term_3.IN0
+code_1[0] => and_term_5.IN0
+code_1[0] => and_term_7.IN0
+code_1[0] => and_term_2.IN0
+code_1[0] => and_term_4.IN0
+code_1[0] => and_term_6.IN0
+code_1[1] => and_term_2.IN1
+code_1[1] => and_term_3.IN1
+code_1[1] => and_term_6.IN1
+code_1[1] => and_term_7.IN1
+code_1[1] => and_term_1.IN1
+code_1[1] => and_term_4.IN1
+code_1[1] => and_term_5.IN1
+code_1[2] => and_term_4.IN2
+code_1[2] => and_term_5.IN2
+code_1[2] => and_term_6.IN2
+code_1[2] => and_term_7.IN2
+code_1[2] => and_term_1.IN2
+code_1[2] => and_term_2.IN2
+code_1[2] => and_term_3.IN2
+code_2[0] => and_term_1.IN3
+code_2[0] => and_term_3.IN3
+code_2[0] => and_term_5.IN3
+code_2[0] => and_term_7.IN3
+code_2[0] => and_term_2.IN3
+code_2[0] => and_term_4.IN3
+code_2[0] => and_term_6.IN3
+code_2[1] => and_term_2.IN4
+code_2[1] => and_term_3.IN4
+code_2[1] => and_term_6.IN4
+code_2[1] => and_term_7.IN4
+code_2[1] => and_term_1.IN4
+code_2[1] => and_term_4.IN4
+code_2[1] => and_term_5.IN4
+code_2[2] => and_term_4.IN5
+code_2[2] => and_term_5.IN5
+code_2[2] => and_term_6.IN5
+code_2[2] => and_term_7.IN5
+code_2[2] => and_term_1.IN5
+code_2[2] => and_term_2.IN5
+code_2[2] => and_term_3.IN5
+output_bit <= or_terms.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|same_code:same_func_1
+code_1[0] => and_term_1.IN0
+code_1[0] => and_term_3.IN0
+code_1[0] => and_term_5.IN0
+code_1[0] => and_term_7.IN0
+code_1[0] => and_term_2.IN0
+code_1[0] => and_term_4.IN0
+code_1[0] => and_term_6.IN0
+code_1[1] => and_term_2.IN1
+code_1[1] => and_term_3.IN1
+code_1[1] => and_term_6.IN1
+code_1[1] => and_term_7.IN1
+code_1[1] => and_term_1.IN1
+code_1[1] => and_term_4.IN1
+code_1[1] => and_term_5.IN1
+code_1[2] => and_term_4.IN2
+code_1[2] => and_term_5.IN2
+code_1[2] => and_term_6.IN2
+code_1[2] => and_term_7.IN2
+code_1[2] => and_term_1.IN2
+code_1[2] => and_term_2.IN2
+code_1[2] => and_term_3.IN2
+code_2[0] => and_term_1.IN3
+code_2[0] => and_term_3.IN3
+code_2[0] => and_term_5.IN3
+code_2[0] => and_term_7.IN3
+code_2[0] => and_term_2.IN3
+code_2[0] => and_term_4.IN3
+code_2[0] => and_term_6.IN3
+code_2[1] => and_term_2.IN4
+code_2[1] => and_term_3.IN4
+code_2[1] => and_term_6.IN4
+code_2[1] => and_term_7.IN4
+code_2[1] => and_term_1.IN4
+code_2[1] => and_term_4.IN4
+code_2[1] => and_term_5.IN4
+code_2[2] => and_term_4.IN5
+code_2[2] => and_term_5.IN5
+code_2[2] => and_term_6.IN5
+code_2[2] => and_term_7.IN5
+code_2[2] => and_term_1.IN5
+code_2[2] => and_term_2.IN5
+code_2[2] => and_term_3.IN5
+output_bit <= or_terms.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|priority:priority_1
+ie1_user[0] => and_term_1.IN0
+ie1_user[0] => and_term_2.IN0
+ie1_user[1] => and_term_3.IN0
+ie1_user[2] => and_term_3.IN1
+ie2_user[0] => and_term_4.IN0
+ie2_user[1] => and_term_2.IN1
+ie2_user[1] => and_term_1.IN1
+ie2_user[2] => and_term_2.IN2
+ie2_user[2] => and_term_1.IN2
+ie2_user[2] => and_term_4.IN1
+output_bit <= or_terms.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|priority_iex:priority_iex_1
+priority => or_1.IN0
+priority => nand_1.IN0
+use_priority => nand_1.IN1
+use_priority => or_1.IN1
+priority_ie1 <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+priority_ie2 <= nand_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|bufferif_3bit:bufif_ie1_func_prio
+bufin[0] => and_buf[0].IN0
+bufin[1] => and_buf[1].IN0
+bufin[2] => and_buf[2].IN0
+control => and_buf[0].IN1
+control => and_buf[1].IN1
+control => and_buf[2].IN1
+bufout[0] <= and_buf[0].DB_MAX_OUTPUT_PORT_TYPE
+bufout[1] <= and_buf[1].DB_MAX_OUTPUT_PORT_TYPE
+bufout[2] <= and_buf[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|bufferif_3bit:bufif_ie2_func_prio
+bufin[0] => and_buf[0].IN0
+bufin[1] => and_buf[1].IN0
+bufin[2] => and_buf[2].IN0
+control => and_buf[0].IN1
+control => and_buf[1].IN1
+control => and_buf[2].IN1
+bufout[0] <= and_buf[0].DB_MAX_OUTPUT_PORT_TYPE
+bufout[1] <= and_buf[1].DB_MAX_OUTPUT_PORT_TYPE
+bufout[2] <= and_buf[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|iex_is1:ie1_is1
+user[0] => and_term_1.IN0
+user[0] => and_term_2.IN0
+user[1] => and_term_1.IN1
+user[1] => and_term_2.IN1
+user[2] => and_term_2.IN2
+user[2] => and_term_1.IN2
+output_bit <= or_terms.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|iex_is1:ie2_is1
+user[0] => and_term_1.IN0
+user[0] => and_term_2.IN0
+user[1] => and_term_1.IN1
+user[1] => and_term_2.IN1
+user[2] => and_term_2.IN2
+user[2] => and_term_1.IN2
+output_bit <= or_terms.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|bufferif_3bit:bufif_ie1_func_is1
+bufin[0] => and_buf[0].IN0
+bufin[1] => and_buf[1].IN0
+bufin[2] => and_buf[2].IN0
+control => and_buf[0].IN1
+control => and_buf[1].IN1
+control => and_buf[2].IN1
+bufout[0] <= and_buf[0].DB_MAX_OUTPUT_PORT_TYPE
+bufout[1] <= and_buf[1].DB_MAX_OUTPUT_PORT_TYPE
+bufout[2] <= and_buf[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|bufferif_3bit:bufif_ie1_func_is2
+bufin[0] => and_buf[0].IN0
+bufin[1] => and_buf[1].IN0
+bufin[2] => and_buf[2].IN0
+control => and_buf[0].IN1
+control => and_buf[1].IN1
+control => and_buf[2].IN1
+bufout[0] <= and_buf[0].DB_MAX_OUTPUT_PORT_TYPE
+bufout[1] <= and_buf[1].DB_MAX_OUTPUT_PORT_TYPE
+bufout[2] <= and_buf[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|bufferif_3bit:bufif_ie2_func_is1
+bufin[0] => and_buf[0].IN0
+bufin[1] => and_buf[1].IN0
+bufin[2] => and_buf[2].IN0
+control => and_buf[0].IN1
+control => and_buf[1].IN1
+control => and_buf[2].IN1
+bufout[0] <= and_buf[0].DB_MAX_OUTPUT_PORT_TYPE
+bufout[1] <= and_buf[1].DB_MAX_OUTPUT_PORT_TYPE
+bufout[2] <= and_buf[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|bufferif_3bit:bufif_ie2_func_is2
+bufin[0] => and_buf[0].IN0
+bufin[1] => and_buf[1].IN0
+bufin[2] => and_buf[2].IN0
+control => and_buf[0].IN1
+control => and_buf[1].IN1
+control => and_buf[2].IN1
+bufout[0] <= and_buf[0].DB_MAX_OUTPUT_PORT_TYPE
+bufout[1] <= and_buf[1].DB_MAX_OUTPUT_PORT_TYPE
+bufout[2] <= and_buf[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|matriz_iex:matriz_ie1
+func[0] => or_line_1.IN0
+func[0] => or_line_3.IN0
+func[0] => or_line_5.IN0
+func[0] => or_line_0.IN0
+func[0] => or_line_2.IN0
+func[0] => or_line_4.IN0
+func[0] => or_line_6.IN0
+func[1] => or_line_0.IN1
+func[1] => or_line_3.IN1
+func[1] => or_line_4.IN1
+func[1] => or_line_1.IN1
+func[1] => or_line_2.IN1
+func[1] => or_line_5.IN1
+func[1] => or_line_6.IN1
+func[2] => or_line_0.IN2
+func[2] => or_line_1.IN2
+func[2] => or_line_2.IN2
+func[2] => or_line_3.IN2
+func[2] => or_line_4.IN2
+func[2] => or_line_5.IN2
+func[2] => or_line_6.IN2
+output_matriz[0] <= or_line_0.DB_MAX_OUTPUT_PORT_TYPE
+output_matriz[1] <= or_line_1.DB_MAX_OUTPUT_PORT_TYPE
+output_matriz[2] <= or_line_2.DB_MAX_OUTPUT_PORT_TYPE
+output_matriz[3] <= or_line_3.DB_MAX_OUTPUT_PORT_TYPE
+output_matriz[4] <= or_line_4.DB_MAX_OUTPUT_PORT_TYPE
+output_matriz[5] <= or_line_5.DB_MAX_OUTPUT_PORT_TYPE
+output_matriz[6] <= or_line_6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|matriz_iex:matriz_ie2
+func[0] => or_line_1.IN0
+func[0] => or_line_3.IN0
+func[0] => or_line_5.IN0
+func[0] => or_line_0.IN0
+func[0] => or_line_2.IN0
+func[0] => or_line_4.IN0
+func[0] => or_line_6.IN0
+func[1] => or_line_0.IN1
+func[1] => or_line_3.IN1
+func[1] => or_line_4.IN1
+func[1] => or_line_1.IN1
+func[1] => or_line_2.IN1
+func[1] => or_line_5.IN1
+func[1] => or_line_6.IN1
+func[2] => or_line_0.IN2
+func[2] => or_line_1.IN2
+func[2] => or_line_2.IN2
+func[2] => or_line_3.IN2
+func[2] => or_line_4.IN2
+func[2] => or_line_5.IN2
+func[2] => or_line_6.IN2
+output_matriz[0] <= or_line_0.DB_MAX_OUTPUT_PORT_TYPE
+output_matriz[1] <= or_line_1.DB_MAX_OUTPUT_PORT_TYPE
+output_matriz[2] <= or_line_2.DB_MAX_OUTPUT_PORT_TYPE
+output_matriz[3] <= or_line_3.DB_MAX_OUTPUT_PORT_TYPE
+output_matriz[4] <= or_line_4.DB_MAX_OUTPUT_PORT_TYPE
+output_matriz[5] <= or_line_5.DB_MAX_OUTPUT_PORT_TYPE
+output_matriz[6] <= or_line_6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|leds_iex:leds_ie1
+func[0] => and_led_0.IN0
+func[0] => and_led_1.IN0
+func[0] => and_led_2.IN0
+func[0] => and_led_3.IN0
+func[1] => and_led_1.IN1
+func[1] => and_led_3.IN1
+func[1] => and_led_0.IN1
+func[1] => and_led_2.IN1
+func[2] => and_led_2.IN2
+func[2] => and_led_3.IN2
+func[2] => and_led_0.IN2
+func[2] => and_led_1.IN2
+output_leds[0] <= and_led_0.DB_MAX_OUTPUT_PORT_TYPE
+output_leds[1] <= and_led_1.DB_MAX_OUTPUT_PORT_TYPE
+output_leds[2] <= and_led_2.DB_MAX_OUTPUT_PORT_TYPE
+output_leds[3] <= and_led_3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|leds_iex:leds_ie2
+func[0] => and_led_0.IN0
+func[0] => and_led_1.IN0
+func[0] => and_led_2.IN0
+func[0] => and_led_3.IN0
+func[1] => and_led_1.IN1
+func[1] => and_led_3.IN1
+func[1] => and_led_0.IN1
+func[1] => and_led_2.IN1
+func[2] => and_led_2.IN2
+func[2] => and_led_3.IN2
+func[2] => and_led_0.IN2
+func[2] => and_led_1.IN2
+output_leds[0] <= and_led_0.DB_MAX_OUTPUT_PORT_TYPE
+output_leds[1] <= and_led_1.DB_MAX_OUTPUT_PORT_TYPE
+output_leds[2] <= and_led_2.DB_MAX_OUTPUT_PORT_TYPE
+output_leds[3] <= and_led_3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|func2:func2_1
+func_ie1[0] => or_func2_ie1.IN0
+func_ie1[1] => or_func2_ie1.IN1
+func_ie1[2] => or_func2_ie1.IN2
+func_ie2[0] => or_func2_ie2.IN0
+func_ie2[1] => or_func2_ie2.IN1
+func_ie2[2] => or_func2_ie2.IN2
+priority => nor_1.IN1
+mux_control <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+display_on <= and_display_on.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|mux2_1:mux2_1_display
+data_1[0] => and_1[0].IN0
+data_1[1] => and_1[1].IN0
+data_1[2] => and_1[2].IN0
+data_2[0] => and_2[0].IN0
+data_2[1] => and_2[1].IN0
+data_2[2] => and_2[2].IN0
+control => and_1[0].IN1
+control => and_1[1].IN1
+control => and_1[2].IN1
+control => and_2[0].IN1
+control => and_2[1].IN1
+control => and_2[2].IN1
+output_data[0] <= or_out[0].DB_MAX_OUTPUT_PORT_TYPE
+output_data[1] <= or_out[1].DB_MAX_OUTPUT_PORT_TYPE
+output_data[2] <= or_out[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|painel_controle|display:display_1
+user[0] => and_term_13.IN0
+user[0] => and_term_23.IN0
+user[0] => and_term_41.IN0
+user[0] => and_term_51.DATAIN
+user[0] => and_term_62.IN0
+user[0] => and_term_01.IN0
+user[0] => and_term_11.IN0
+user[0] => and_term_12.IN0
+user[0] => and_term_22.IN0
+user[0] => and_term_31.IN0
+user[0] => and_term_42.IN0
+user[0] => and_term_61.IN0
+user[0] => and_term_63.IN0
+user[1] => and_term_01.IN1
+user[1] => and_term_11.IN1
+user[1] => and_term_13.IN1
+user[1] => and_term_21.IN0
+user[1] => and_term_23.IN1
+user[1] => and_term_31.IN1
+user[1] => and_term_42.IN1
+user[1] => and_term_52.IN0
+user[1] => and_term_12.IN1
+user[1] => and_term_22.IN1
+user[1] => and_term_41.IN1
+user[1] => and_term_53.IN0
+user[1] => and_term_63.IN1
+user[2] => and_term_02.DATAIN
+user[2] => and_term_12.IN2
+user[2] => and_term_13.IN2
+user[2] => and_term_22.IN2
+user[2] => and_term_32.DATAIN
+user[2] => and_term_43.DATAIN
+user[2] => and_term_53.IN1
+user[2] => and_term_62.IN1
+user[2] => and_term_11.IN2
+user[2] => and_term_21.IN1
+user[2] => and_term_52.IN1
+user[2] => and_term_61.IN1
+output_segments[0] <= or_terms_0.DB_MAX_OUTPUT_PORT_TYPE
+output_segments[1] <= or_terms_1.DB_MAX_OUTPUT_PORT_TYPE
+output_segments[2] <= or_terms_2.DB_MAX_OUTPUT_PORT_TYPE
+output_segments[3] <= or_terms_3.DB_MAX_OUTPUT_PORT_TYPE
+output_segments[4] <= or_terms_4.DB_MAX_OUTPUT_PORT_TYPE
+output_segments[5] <= or_terms_5.DB_MAX_OUTPUT_PORT_TYPE
+output_segments[6] <= or_terms_6.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,19 @@
+module painel_controle(o,e1,e2);
+
+	output o;
+	input e1,e2;
+	
+	and a1(o, e1,e2);
+	
+	
+endmodule
+
+module a1(o2,o);
+
+	output o2;
+	input o;
+	
+	not n1(o2,o);
+	
+	
+endmodule

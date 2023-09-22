@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri Sep 15 19:28:14 2023
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : painel_controle
+Top-level Entity Name : painel_controle
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 75 / 240 ( 31 % )
+Total pins : 38 / 80 ( 48 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

@@ -1,0 +1,43 @@
+module func_2 (
+    input [2:0] func_ie1 , func_ie2 ,
+    input priority ,  
+    output display_ie1 , display_ie2 , func2_ie1 , func2_ie2
+);
+
+not not_1 (not_func_ie1[1] , func_ie1[1]);
+not not_2 (not_func_ie2[1] , func_ie2[1]);
+
+//~b + c + a  
+//verifica se os usuarios estão usando a função 2
+//0 = usando função 2
+
+    or func2_ie1 (func2_ie1_w , not_func_ie1[1] , func_ie1[0] , func_ie1[2]);
+
+    or func2_ie2 (func2_ie2_w , not_func_ie2[1] , func[0] , func[2]);
+
+and and_out_1 (func2_ie1 , func2_ie1_w);
+and and_out_1 (func2_ie2 , func2_ie2_w);
+
+not not_3 (not_func2_ie1_w , func2_ie1);
+not not_4 (not_func2_ie2_w , func2_ie2);
+not not_5 (not_priority , priority);
+
+
+//----------------------
+//CONTROLE DOS BUFFERS DO DISPLAY
+
+//~b~c + a 
+//controle do buffer ie1 do display
+
+    and and_1 (and_1_w , not_func2_ie2_w , not_priority);
+
+    or or_1 (display_ie1 , and_1_w , func2_ie1);
+ 
+//~ac+b
+//controle do buffer ie2 do display
+
+    and and_2 (and_2_w , not_func2_ie1_w , priority);
+
+    or or_2 (display_ie2 , and_2_w , func2_ie2);
+
+endmodule

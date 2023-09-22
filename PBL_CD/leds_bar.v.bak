@@ -1,0 +1,26 @@
+//leds_bar 3 in 4 out
+
+module leds_bar (
+
+	input [2:0] func , not_func ,
+	output [3:0] led
+	
+);
+
+//~a~bc func 1
+
+    and and_led_1 (led[0] , not_func[0] , not_func[1] , func[2]);
+
+//~abc func 3
+
+    and and_led_1 (led[0] , not_func[0] , func[1] , func[2]);
+
+//a~b~cfunc 4
+
+    and and_led_1 (led[0] , func[0] , not_func[1] , not_func[2]);
+
+//ab~c func 6
+
+    and and_led_1 (led[0] , func[0] , func[1] , not_func[2]);
+
+endmodule
