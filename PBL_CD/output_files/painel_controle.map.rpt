@@ -1,5 +1,5 @@
 Analysis & Synthesis report for painel_controle
-Fri Sep 15 19:28:12 2023
+Mon Dec  4 11:23:13 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -42,7 +42,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Sep 15 19:28:12 2023          ;
+; Analysis & Synthesis Status ; Successful - Mon Dec  4 11:23:13 2023          ;
 ; Quartus Prime Version       ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name               ; painel_controle                                ;
 ; Top-level Entity Name       ; painel_controle                                ;
@@ -141,24 +141,24 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                 ;
-+----------------------------------+-----------------+------------------------+--------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path   ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------+---------+
-; same_code.v                      ; yes             ; User Verilog HDL File  ; C:/CD/PBL_CD/same_code.v       ;         ;
-; mux2_1.v                         ; yes             ; User Verilog HDL File  ; C:/CD/PBL_CD/mux2_1.v          ;         ;
-; func2.v                          ; yes             ; User Verilog HDL File  ; C:/CD/PBL_CD/func2.v           ;         ;
-; display.v                        ; yes             ; User Verilog HDL File  ; C:/CD/PBL_CD/display.v         ;         ;
-; valid_user_func.v                ; yes             ; User Verilog HDL File  ; C:/CD/PBL_CD/valid_user_func.v ;         ;
-; priority_iex.v                   ; yes             ; User Verilog HDL File  ; C:/CD/PBL_CD/priority_iex.v    ;         ;
-; priority.v                       ; yes             ; User Verilog HDL File  ; C:/CD/PBL_CD/priority.v        ;         ;
-; matriz_iex.v                     ; yes             ; User Verilog HDL File  ; C:/CD/PBL_CD/matriz_iex.v      ;         ;
-; leds_iex.v                       ; yes             ; User Verilog HDL File  ; C:/CD/PBL_CD/leds_iex.v        ;         ;
-; iex_is1.v                        ; yes             ; User Verilog HDL File  ; C:/CD/PBL_CD/iex_is1.v         ;         ;
-; bufferif_3bit.v                  ; yes             ; User Verilog HDL File  ; C:/CD/PBL_CD/bufferif_3bit.v   ;         ;
-; painel_controle.v                ; yes             ; User Verilog HDL File  ; C:/CD/PBL_CD/painel_controle.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                          ;
++----------------------------------+-----------------+------------------------+-----------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path            ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------+---------+
+; same_code.v                      ; yes             ; User Verilog HDL File  ; C:/CD/CD_PBL_1/PBL_CD/same_code.v       ;         ;
+; mux2_1.v                         ; yes             ; User Verilog HDL File  ; C:/CD/CD_PBL_1/PBL_CD/mux2_1.v          ;         ;
+; func2.v                          ; yes             ; User Verilog HDL File  ; C:/CD/CD_PBL_1/PBL_CD/func2.v           ;         ;
+; display.v                        ; yes             ; User Verilog HDL File  ; C:/CD/CD_PBL_1/PBL_CD/display.v         ;         ;
+; valid_user_func.v                ; yes             ; User Verilog HDL File  ; C:/CD/CD_PBL_1/PBL_CD/valid_user_func.v ;         ;
+; priority_iex.v                   ; yes             ; User Verilog HDL File  ; C:/CD/CD_PBL_1/PBL_CD/priority_iex.v    ;         ;
+; priority.v                       ; yes             ; User Verilog HDL File  ; C:/CD/CD_PBL_1/PBL_CD/priority.v        ;         ;
+; matriz_iex.v                     ; yes             ; User Verilog HDL File  ; C:/CD/CD_PBL_1/PBL_CD/matriz_iex.v      ;         ;
+; leds_iex.v                       ; yes             ; User Verilog HDL File  ; C:/CD/CD_PBL_1/PBL_CD/leds_iex.v        ;         ;
+; iex_is1.v                        ; yes             ; User Verilog HDL File  ; C:/CD/CD_PBL_1/PBL_CD/iex_is1.v         ;         ;
+; bufferif_3bit.v                  ; yes             ; User Verilog HDL File  ; C:/CD/CD_PBL_1/PBL_CD/bufferif_3bit.v   ;         ;
+; painel_controle.v                ; yes             ; User Verilog HDL File  ; C:/CD/CD_PBL_1/PBL_CD/painel_controle.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -245,7 +245,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------+
 ; Analysis & Synthesis Equations ;
 +--------------------------------+
-The equations can be found in C:/CD/PBL_CD/output_files/painel_controle.map.eqn.
+The equations can be found in C:/CD/CD_PBL_1/PBL_CD/output_files/painel_controle.map.eqn.
 
 
 +-------------------------------+
@@ -254,91 +254,91 @@ The equations can be found in C:/CD/PBL_CD/output_files/painel_controle.map.eqn.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Fri Sep 15 19:28:01 2023
+    Info: Processing started: Mon Dec  4 11:22:51 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off painel_controle -c painel_controle
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file same_code.v
-    Info (12023): Found entity 1: same_code File: C:/CD/PBL_CD/same_code.v Line: 4
+    Info (12023): Found entity 1: same_code File: C:/CD/CD_PBL_1/PBL_CD/same_code.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file mux2_1.v
-    Info (12023): Found entity 1: mux2_1 File: C:/CD/PBL_CD/mux2_1.v Line: 1
-Warning (10463): Verilog HDL Declaration warning at func2.v(3): "priority" is SystemVerilog-2005 keyword File: C:/CD/PBL_CD/func2.v Line: 3
+    Info (12023): Found entity 1: mux2_1 File: C:/CD/CD_PBL_1/PBL_CD/mux2_1.v Line: 1
+Warning (10463): Verilog HDL Declaration warning at func2.v(3): "priority" is SystemVerilog-2005 keyword File: C:/CD/CD_PBL_1/PBL_CD/func2.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file func2.v
-    Info (12023): Found entity 1: func2 File: C:/CD/PBL_CD/func2.v Line: 1
+    Info (12023): Found entity 1: func2 File: C:/CD/CD_PBL_1/PBL_CD/func2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file display.v
-    Info (12023): Found entity 1: display File: C:/CD/PBL_CD/display.v Line: 3
+    Info (12023): Found entity 1: display File: C:/CD/CD_PBL_1/PBL_CD/display.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file valid_user_func.v
-    Info (12023): Found entity 1: valid_user_func File: C:/CD/PBL_CD/valid_user_func.v Line: 4
+    Info (12023): Found entity 1: valid_user_func File: C:/CD/CD_PBL_1/PBL_CD/valid_user_func.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file same_user.v
-    Info (12023): Found entity 1: same_user File: C:/CD/PBL_CD/same_user.v Line: 4
-Warning (10463): Verilog HDL Declaration warning at priority_iex.v(3): "priority" is SystemVerilog-2005 keyword File: C:/CD/PBL_CD/priority_iex.v Line: 3
+    Info (12023): Found entity 1: same_user File: C:/CD/CD_PBL_1/PBL_CD/same_user.v Line: 4
+Warning (10463): Verilog HDL Declaration warning at priority_iex.v(3): "priority" is SystemVerilog-2005 keyword File: C:/CD/CD_PBL_1/PBL_CD/priority_iex.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file priority_iex.v
-    Info (12023): Found entity 1: priority_iex File: C:/CD/PBL_CD/priority_iex.v Line: 1
-Warning (10463): Verilog HDL Declaration warning at priority.v(3): "priority" is SystemVerilog-2005 keyword File: C:/CD/PBL_CD/priority.v Line: 3
+    Info (12023): Found entity 1: priority_iex File: C:/CD/CD_PBL_1/PBL_CD/priority_iex.v Line: 1
+Warning (10463): Verilog HDL Declaration warning at priority.v(3): "priority" is SystemVerilog-2005 keyword File: C:/CD/CD_PBL_1/PBL_CD/priority.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file priority.v
-    Info (12023): Found entity 1: priority File: C:/CD/PBL_CD/priority.v Line: 3
+    Info (12023): Found entity 1: priority File: C:/CD/CD_PBL_1/PBL_CD/priority.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file matriz_iex.v
-    Info (12023): Found entity 1: matriz_iex File: C:/CD/PBL_CD/matriz_iex.v Line: 3
+    Info (12023): Found entity 1: matriz_iex File: C:/CD/CD_PBL_1/PBL_CD/matriz_iex.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file leds_iex.v
-    Info (12023): Found entity 1: leds_iex File: C:/CD/PBL_CD/leds_iex.v Line: 3
+    Info (12023): Found entity 1: leds_iex File: C:/CD/CD_PBL_1/PBL_CD/leds_iex.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file iex_is1.v
-    Info (12023): Found entity 1: iex_is1 File: C:/CD/PBL_CD/iex_is1.v Line: 6
+    Info (12023): Found entity 1: iex_is1 File: C:/CD/CD_PBL_1/PBL_CD/iex_is1.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file bufferif_3bit.v
-    Info (12023): Found entity 1: bufferif_3bit File: C:/CD/PBL_CD/bufferif_3bit.v Line: 1
+    Info (12023): Found entity 1: bufferif_3bit File: C:/CD/CD_PBL_1/PBL_CD/bufferif_3bit.v Line: 1
 Warning (12019): Can't analyze file -- file auto.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file painel_controle.v
-    Info (12023): Found entity 1: painel_controle File: C:/CD/PBL_CD/painel_controle.v Line: 1
+    Info (12023): Found entity 1: painel_controle File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 1
 Warning (12019): Can't analyze file -- file func_2.v is missing
 Warning (12019): Can't analyze file -- file display_decoder.v is missing
-Warning (10236): Verilog HDL Implicit Net warning at mux2_1.v(9): created implicit net for "notControl_w" File: C:/CD/PBL_CD/mux2_1.v Line: 9
-Warning (10236): Verilog HDL Implicit Net warning at func2.v(7): created implicit net for "not_func_ie1_1_w" File: C:/CD/PBL_CD/func2.v Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at func2.v(8): created implicit net for "not_func_ie2_1_w" File: C:/CD/PBL_CD/func2.v Line: 8
-Warning (10236): Verilog HDL Implicit Net warning at func2.v(14): created implicit net for "func2_ie1_w" File: C:/CD/PBL_CD/func2.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at func2.v(16): created implicit net for "func2_ie2_w" File: C:/CD/PBL_CD/func2.v Line: 16
-Warning (10236): Verilog HDL Implicit Net warning at func2.v(20): created implicit net for "not_priority" File: C:/CD/PBL_CD/func2.v Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at func2.v(29): created implicit net for "nor_1_w" File: C:/CD/PBL_CD/func2.v Line: 29
-Warning (10236): Verilog HDL Implicit Net warning at priority_iex.v(9): created implicit net for "not_use_priority_w" File: C:/CD/PBL_CD/priority_iex.v Line: 9
-Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(49): created implicit net for "valid_user_func_ie1_w" File: C:/CD/PBL_CD/painel_controle.v Line: 49
-Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(54): created implicit net for "valid_user_func_ie2_w" File: C:/CD/PBL_CD/painel_controle.v Line: 54
-Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(169): created implicit net for "same_user_w" File: C:/CD/PBL_CD/painel_controle.v Line: 169
-Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(173): created implicit net for "not_same_user_w" File: C:/CD/PBL_CD/painel_controle.v Line: 173
-Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(176): created implicit net for "same_func_w" File: C:/CD/PBL_CD/painel_controle.v Line: 176
-Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(181): created implicit net for "priority_w" File: C:/CD/PBL_CD/painel_controle.v Line: 181
-Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(229): created implicit net for "use_priority_w" File: C:/CD/PBL_CD/painel_controle.v Line: 229
-Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(277): created implicit net for "ie1_is1_w" File: C:/CD/PBL_CD/painel_controle.v Line: 277
-Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(281): created implicit net for "ie2_is1_w" File: C:/CD/PBL_CD/painel_controle.v Line: 281
-Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(286): created implicit net for "ie1_is2_w" File: C:/CD/PBL_CD/painel_controle.v Line: 286
-Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(288): created implicit net for "ie2_is2_w" File: C:/CD/PBL_CD/painel_controle.v Line: 288
-Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(408): created implicit net for "mux_control_w" File: C:/CD/PBL_CD/painel_controle.v Line: 408
+Warning (10236): Verilog HDL Implicit Net warning at mux2_1.v(9): created implicit net for "notControl_w" File: C:/CD/CD_PBL_1/PBL_CD/mux2_1.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at func2.v(7): created implicit net for "not_func_ie1_1_w" File: C:/CD/CD_PBL_1/PBL_CD/func2.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at func2.v(8): created implicit net for "not_func_ie2_1_w" File: C:/CD/CD_PBL_1/PBL_CD/func2.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at func2.v(14): created implicit net for "func2_ie1_w" File: C:/CD/CD_PBL_1/PBL_CD/func2.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at func2.v(16): created implicit net for "func2_ie2_w" File: C:/CD/CD_PBL_1/PBL_CD/func2.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at func2.v(20): created implicit net for "not_priority" File: C:/CD/CD_PBL_1/PBL_CD/func2.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at func2.v(29): created implicit net for "nor_1_w" File: C:/CD/CD_PBL_1/PBL_CD/func2.v Line: 29
+Warning (10236): Verilog HDL Implicit Net warning at priority_iex.v(9): created implicit net for "not_use_priority_w" File: C:/CD/CD_PBL_1/PBL_CD/priority_iex.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(49): created implicit net for "valid_user_func_ie1_w" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(54): created implicit net for "valid_user_func_ie2_w" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 54
+Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(169): created implicit net for "same_user_w" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 169
+Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(173): created implicit net for "not_same_user_w" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 173
+Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(176): created implicit net for "same_func_w" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 176
+Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(181): created implicit net for "priority_w" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 181
+Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(229): created implicit net for "use_priority_w" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 229
+Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(277): created implicit net for "ie1_is1_w" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 277
+Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(281): created implicit net for "ie2_is1_w" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 281
+Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(286): created implicit net for "ie1_is2_w" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 286
+Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(288): created implicit net for "ie2_is2_w" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 288
+Warning (10236): Verilog HDL Implicit Net warning at painel_controle.v(403): created implicit net for "mux_control_w" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 403
 Info (12127): Elaborating entity "painel_controle" for the top level hierarchy
-Warning (10030): Net "low_out_w" at painel_controle.v(13) has no driver or initial value, using a default initial value '0' File: C:/CD/PBL_CD/painel_controle.v Line: 13
-Info (12128): Elaborating entity "valid_user_func" for hierarchy "valid_user_func:valid_user_func_ie1" File: C:/CD/PBL_CD/painel_controle.v Line: 51
-Info (12128): Elaborating entity "bufferif_3bit" for hierarchy "bufferif_3bit:bufif_ie1_user" File: C:/CD/PBL_CD/painel_controle.v Line: 95
-Info (12128): Elaborating entity "same_code" for hierarchy "same_code:same_user_1" File: C:/CD/PBL_CD/painel_controle.v Line: 171
-Info (12128): Elaborating entity "priority" for hierarchy "priority:priority_1" File: C:/CD/PBL_CD/painel_controle.v Line: 183
-Info (12128): Elaborating entity "priority_iex" for hierarchy "priority_iex:priority_iex_1" File: C:/CD/PBL_CD/painel_controle.v Line: 241
-Info (12128): Elaborating entity "iex_is1" for hierarchy "iex_is1:ie1_is1" File: C:/CD/PBL_CD/painel_controle.v Line: 278
-Info (12128): Elaborating entity "matriz_iex" for hierarchy "matriz_iex:matriz_ie1" File: C:/CD/PBL_CD/painel_controle.v Line: 345
-Info (12128): Elaborating entity "leds_iex" for hierarchy "leds_iex:leds_ie1" File: C:/CD/PBL_CD/painel_controle.v Line: 366
-Info (12128): Elaborating entity "func2" for hierarchy "func2:func2_1" File: C:/CD/PBL_CD/painel_controle.v Line: 412
-Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:mux2_1_display" File: C:/CD/PBL_CD/painel_controle.v Line: 433
-Info (12128): Elaborating entity "display" for hierarchy "display:display_1" File: C:/CD/PBL_CD/painel_controle.v Line: 443
+Warning (10030): Net "low_out_w" at painel_controle.v(13) has no driver or initial value, using a default initial value '0' File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 13
+Info (12128): Elaborating entity "valid_user_func" for hierarchy "valid_user_func:valid_user_func_ie1" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 51
+Info (12128): Elaborating entity "bufferif_3bit" for hierarchy "bufferif_3bit:bufif_ie1_user" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 95
+Info (12128): Elaborating entity "same_code" for hierarchy "same_code:same_user_1" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 171
+Info (12128): Elaborating entity "priority" for hierarchy "priority:priority_1" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 183
+Info (12128): Elaborating entity "priority_iex" for hierarchy "priority_iex:priority_iex_1" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 241
+Info (12128): Elaborating entity "iex_is1" for hierarchy "iex_is1:ie1_is1" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 278
+Info (12128): Elaborating entity "matriz_iex" for hierarchy "matriz_iex:matriz_ie1" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 345
+Info (12128): Elaborating entity "leds_iex" for hierarchy "leds_iex:leds_ie1" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 366
+Info (12128): Elaborating entity "func2" for hierarchy "func2:func2_1" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 407
+Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:mux2_1_display" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 415
+Info (12128): Elaborating entity "display" for hierarchy "display:display_1" File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 422
 Info (13014): Ignored 4 buffer(s)
     Info (13019): Ignored 4 SOFT buffer(s)
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "high_out[0]" is stuck at VCC File: C:/CD/PBL_CD/painel_controle.v Line: 8
-    Warning (13410): Pin "high_out[1]" is stuck at VCC File: C:/CD/PBL_CD/painel_controle.v Line: 8
-    Warning (13410): Pin "high_out[2]" is stuck at VCC File: C:/CD/PBL_CD/painel_controle.v Line: 8
-    Warning (13410): Pin "high_out[3]" is stuck at VCC File: C:/CD/PBL_CD/painel_controle.v Line: 8
-    Warning (13410): Pin "high_out[4]" is stuck at VCC File: C:/CD/PBL_CD/painel_controle.v Line: 8
+    Warning (13410): Pin "high_out[0]" is stuck at VCC File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 8
+    Warning (13410): Pin "high_out[1]" is stuck at VCC File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 8
+    Warning (13410): Pin "high_out[2]" is stuck at VCC File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 8
+    Warning (13410): Pin "high_out[3]" is stuck at VCC File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 8
+    Warning (13410): Pin "high_out[4]" is stuck at VCC File: C:/CD/CD_PBL_1/PBL_CD/painel_controle.v Line: 8
 Info (21057): Implemented 113 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 26 output pins
     Info (21061): Implemented 75 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 4715 megabytes
-    Info: Processing ended: Fri Sep 15 19:28:12 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Peak virtual memory: 4712 megabytes
+    Info: Processing ended: Mon Dec  4 11:23:13 2023
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:49
 
 

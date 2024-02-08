@@ -3,7 +3,7 @@ $comment
 		vcd file painel_controle.msim.vcd -direction
 $end
 $date
-	Sat Sep 16 20:03:11 2023
+	Mon Dec 04 11:28:27 2023
 $end
 $version
 	ModelSim Version 2020.1
@@ -51,43 +51,43 @@ $var wire 1 A unknown $end
 $var tri1 1 B devclrn $end
 $var tri1 1 C devpor $end
 $var tri1 1 D devoe $end
-$var wire 1 E valid_user_func_ie2|or_terms~0_combout $end
-$var wire 1 F valid_user_func_ie2|or_terms~1_combout $end
-$var wire 1 G valid_user_func_ie2|or_terms~2_combout $end
-$var wire 1 H valid_user_func_ie2|or_terms~3_combout $end
-$var wire 1 I ie2_is1|or_terms~0_combout $end
-$var wire 1 J valid_user_func_ie1|or_terms~0_combout $end
-$var wire 1 K valid_user_func_ie1|or_terms~1_combout $end
-$var wire 1 L valid_user_func_ie1|or_terms~2_combout $end
-$var wire 1 M bufif_ie1_user|and_buf[2]~combout $end
-$var wire 1 N ie1_is1|or_terms~2_combout $end
-$var wire 1 O priority_1|or_terms~0_combout $end
-$var wire 1 P priority_1|or_terms~1_combout $end
-$var wire 1 Q bufif_ie2_user|and_buf[2]~combout $end
-$var wire 1 R bufif_ie2_user|and_buf[1]~combout $end
-$var wire 1 S bufif_ie1_user|and_buf[1]~combout $end
-$var wire 1 T same_user_1|and_term_1~combout $end
-$var wire 1 U bufif_ie2_func|and_buf[0]~combout $end
-$var wire 1 V bufif_ie2_func|and_buf[1]~4_combout $end
-$var wire 1 W valid_user_func_ie1|or_terms~3_combout $end
-$var wire 1 X same_func_1|or_terms~0_combout $end
-$var wire 1 Y bufif_ie1_func|and_buf[1]~6_combout $end
-$var wire 1 Z same_func_1|or_terms~2_combout $end
-$var wire 1 [ bufif_ie1_func|and_buf[2]~combout $end
-$var wire 1 \ same_func_1|or_terms~1_combout $end
-$var wire 1 ] bufif_ie1_func|and_buf[0]~combout $end
-$var wire 1 ^ same_func_1|or_terms~3_combout $end
-$var wire 1 _ same_user_1|and_term_5~0_combout $end
-$var wire 1 ` and_use_priority~0_combout $end
-$var wire 1 a same_user_1|and_term_3~0_combout $end
-$var wire 1 b and_use_priority~1_combout $end
-$var wire 1 c priority_iex_1|nand_1~combout $end
-$var wire 1 d bufif_ie2_func_is1|and_buf[2]~1_combout $end
-$var wire 1 e bufif_ie2_func_is1|and_buf[1]~2_combout $end
-$var wire 1 f priority_iex_1|or_1~combout $end
-$var wire 1 g bufif_ie1_func_is1|and_buf[0]~0_combout $end
-$var wire 1 h matriz_ie1|or_line_6~0_combout $end
-$var wire 1 i bufif_ie2_func_is1|and_buf[0]~0_combout $end
+$var wire 1 E valid_user_func_ie1|or_terms~0_combout $end
+$var wire 1 F valid_user_func_ie1|or_terms~1_combout $end
+$var wire 1 G valid_user_func_ie1|or_terms~2_combout $end
+$var wire 1 H ie1_is1|or_terms~2_combout $end
+$var wire 1 I bufif_ie1_user|and_buf[1]~combout $end
+$var wire 1 J valid_user_func_ie2|or_terms~0_combout $end
+$var wire 1 K valid_user_func_ie2|or_terms~1_combout $end
+$var wire 1 L valid_user_func_ie2|or_terms~2_combout $end
+$var wire 1 M bufif_ie2_user|and_buf[1]~combout $end
+$var wire 1 N bufif_ie1_user|and_buf[2]~combout $end
+$var wire 1 O bufif_ie2_user|and_buf[2]~combout $end
+$var wire 1 P same_user_1|and_term_1~combout $end
+$var wire 1 Q valid_user_func_ie2|or_terms~3_combout $end
+$var wire 1 R priority_1|or_terms~0_combout $end
+$var wire 1 S priority_1|or_terms~1_combout $end
+$var wire 1 T bufif_ie2_func|and_buf[0]~combout $end
+$var wire 1 U valid_user_func_ie1|or_terms~3_combout $end
+$var wire 1 V same_func_1|or_terms~0_combout $end
+$var wire 1 W bufif_ie2_func|and_buf[1]~4_combout $end
+$var wire 1 X bufif_ie1_func|and_buf[1]~6_combout $end
+$var wire 1 Y same_func_1|or_terms~2_combout $end
+$var wire 1 Z bufif_ie1_func|and_buf[2]~combout $end
+$var wire 1 [ same_func_1|or_terms~1_combout $end
+$var wire 1 \ bufif_ie1_func|and_buf[0]~combout $end
+$var wire 1 ] same_func_1|or_terms~3_combout $end
+$var wire 1 ^ same_user_1|and_term_5~0_combout $end
+$var wire 1 _ and_use_priority~0_combout $end
+$var wire 1 ` same_user_1|and_term_3~0_combout $end
+$var wire 1 a and_use_priority~1_combout $end
+$var wire 1 b priority_iex_1|or_1~combout $end
+$var wire 1 c bufif_ie1_func_is1|and_buf[0]~0_combout $end
+$var wire 1 d matriz_ie1|or_line_6~0_combout $end
+$var wire 1 e ie2_is1|or_terms~0_combout $end
+$var wire 1 f priority_iex_1|nand_1~combout $end
+$var wire 1 g bufif_ie2_func_is1|and_buf[0]~0_combout $end
+$var wire 1 h bufif_ie2_func_is1|and_buf[2]~1_combout $end
+$var wire 1 i bufif_ie2_func_is1|and_buf[1]~2_combout $end
 $var wire 1 j and_final_matriz[0]~combout $end
 $var wire 1 k matriz_ie1|or_line_6~1_combout $end
 $var wire 1 l and_final_matriz[1]~combout $end
@@ -101,23 +101,23 @@ $var wire 1 s matriz_ie1|or_line_6~5_combout $end
 $var wire 1 t and_final_matriz[5]~combout $end
 $var wire 1 u matriz_ie1|or_line_6~6_combout $end
 $var wire 1 v and_final_matriz[6]~combout $end
-$var wire 1 w func2_1|or_1~0_combout $end
-$var wire 1 x func2_1|or_func2_ie2~combout $end
+$var wire 1 w func2_1|or_func2_ie2~combout $end
+$var wire 1 x func2_1|or_1~0_combout $end
 $var wire 1 y func2_1|or_1~combout $end
-$var wire 1 z mux2_1_display|or_out[1]~1_combout $end
-$var wire 1 { mux2_1_display|or_out[2]~2_combout $end
-$var wire 1 | mux2_1_display|or_out[0]~0_combout $end
+$var wire 1 z mux2_1_display|or_out[0]~0_combout $end
+$var wire 1 { mux2_1_display|or_out[1]~1_combout $end
+$var wire 1 | mux2_1_display|or_out[2]~2_combout $end
 $var wire 1 } display_1|or_terms_0~0_combout $end
 $var wire 1 ~ display_1|or_terms_1~0_combout $end
 $var wire 1 !! display_1|or_terms_2~0_combout $end
 $var wire 1 "! display_1|or_terms_4~combout $end
 $var wire 1 #! display_1|or_terms_5~combout $end
 $var wire 1 $! display_1|or_terms_6~0_combout $end
-$var wire 1 %! leds_ie2|and_led_1~0_combout $end
-$var wire 1 &! bufif_ie2_func_is2|and_buf[2]~combout $end
+$var wire 1 %! bufif_ie1_func_is2|and_buf[0]~0_combout $end
+$var wire 1 &! leds_ie1|and_led_0~combout $end
 $var wire 1 '! bufif_ie2_func_is2|and_buf[0]~combout $end
-$var wire 1 (! bufif_ie1_func_is2|and_buf[0]~0_combout $end
-$var wire 1 )! leds_ie1|and_led_0~combout $end
+$var wire 1 (! leds_ie2|and_led_1~0_combout $end
+$var wire 1 )! bufif_ie2_func_is2|and_buf[2]~combout $end
 $var wire 1 *! or_final_leds[0]~combout $end
 $var wire 1 +! leds_ie1|and_led_1~0_combout $end
 $var wire 1 ,! or_final_leds[1]~combout $end
@@ -143,26 +143,26 @@ $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b1 !
-b11 "
-b1 #
-b1 $
+b10 !
+b101 "
+b0 #
+b0 $
 0%
-0&
+1&
 0-
 0,
-1+
+0+
 0*
 0)
-1(
-0'
-1.
+0(
+1'
+0.
 02
 01
 00
 0/
-09
-18
+19
+08
 17
 16
 15
@@ -179,46 +179,46 @@ xA
 1B
 1C
 1D
-1E
-0F
+0E
+1F
 1G
 1H
 0I
 0J
-1K
-1L
+0K
+0L
 0M
 1N
 0O
-1P
+0P
 0Q
 0R
 1S
 0T
 1U
 0V
-1W
-0X
+0W
+1X
 0Y
-1Z
+0Z
 0[
 0\
-1]
-1^
-0_
-1`
+0]
+0^
+1_
+0`
 0a
 1b
 1c
 0d
 0e
-1f
-1g
-1h
+0f
+0g
+0h
 0i
-1j
-0k
-0l
+0j
+1k
+1l
 0m
 0n
 0o
@@ -229,18 +229,18 @@ xA
 0t
 0u
 0v
-0w
+1w
 1x
-1y
-1z
+0y
+0z
 0{
-1|
+0|
 1}
 0~
-1!!
+0!!
 0"!
-1#!
-0$!
+0#!
+1$!
 0%!
 0&!
 0'!
@@ -253,17 +253,17 @@ xA
 0.!
 0/!
 00!
-11!
-14!
-03!
+01!
+04!
+13!
 02!
 17!
-16!
-05!
-1:!
+06!
+15!
+0:!
 09!
 08!
-1=!
+0=!
 0<!
 0;!
 $end
